@@ -1,7 +1,7 @@
 const btn_gravar = document.querySelector("#btn_gravar");
 const btn_cancelar = document.querySelector("#btn_cancelar");
 
-const f_name = document.getElementById("f_name");
+const f_name = document.querySelector("#f_name");
 const f_email = document.querySelector("#f_email");
 const f_senha = document.querySelector("#f_senha");
 const f_repetir_senha = document.querySelector("#f_repetir_senha");

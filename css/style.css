@@ -44,6 +44,9 @@
     margin-right: 1px;
     width: 100%;
 }
+.aba:hover{
+    background-color: #017374;
+}
 .aba-selecionada{
     background-color: #d0fefe !important;
     color: #1f2b4d;

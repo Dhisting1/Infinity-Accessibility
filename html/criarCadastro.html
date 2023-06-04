@@ -6,36 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro</title>
     <link rel="stylesheet" href="../css/criarCadastro.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;0,800;1,600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body id="bodyCadastro">
     <!-- <h1>Novo</h1> -->
 
-    <form class="elementosForm">
-      <div class="campoForm">
-        <label for="f_name">Nome:</label>
-        <input type="text" name="f_name" id="f_name" />
+    <div class="container">
+      <div class="form-image">
+        <img src="../img/form-img.svg" alt="" />
       </div>
+      <div class="form">
+        <form action="#">
+          <div class="form-header">
+            <div class="title">
+              <h1>Cadastre-se</h1>
+            </div>
+            <div class="login-button">
+              <button><a href="#">Entrar</a></button>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="input-box">
+              <label for="f_name">Primeiro nome:</label>
+              <input
+                type="text"
+                id="f_name"
+                name="f_name"
+                placeholder="Digite seu completo"
+                required
+              />
+            </div>
 
-      <div class="campoForm">
-        <label for="f_email">Email:</label>
-        <input type="email" name="f_email" id="f_email" />
+            <div class="input-box">
+              <label for="f_email">Email:</label>
+              <input
+                type="text"
+                id="f_email"
+                name="email"
+                placeholder="Digite seu email"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <label for="f_password">Senha:</label>
+              <input
+                type="password"
+                id="f_senha"
+                name="password"
+                placeholder="Digite sua senha"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <label for="f_repetir_senha">Confirme sua senha:</label>
+              <input
+                type="password"
+                id="f_repetir_senha"
+                name="confirm-password"
+                placeholder="Confirme sua senha"
+                required
+              />
+            </div>
+          </div>
+          <div class="genero-input">
+            <div class="genero-title">
+              <h6>Gênero</h6>
+            </div>
+            <div class="genero-group">
+              <div class="genero-input">
+                <input type="radio" name="genero" id="feminino" />
+                <label for="feminino">Feminino</label>
+              </div>
+              <div class="genero-input">
+                <input type="radio" name="genero" id="masculino" />
+                <label for="masculino">Masculino</label>
+              </div>
+              <div class="genero-input">
+                <input type="radio" name="genero" id="outros" />
+                <label for="outros">Outros</label>
+              </div>
+              <div class="genero-input">
+                <input type="radio" name="genero" id="nao-dizer" />
+                <label for="nao-dizer">Prefiro não dizer</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="continue-button">
+            <button id="btn_gravar"><a href="#">Continuar</a></button>
+            <button id="btn_cancelar">Cancelar</button>
+          </div>
+        </form>
       </div>
-
-      <div class="campoForm">
-        <label for="f_senha">Senha: </label>
-        <input type="password" name="f_senha" id="f_senha" />
-      </div>
-
-      <div class="campoForm">
-        <label for="f_repetir_senha">Repetir a senha: </label>
-        <input type="password" name="f_repetir_senha" id="f_repetir_senha" />
-      </div>
-    </form>
-
-    <div class="botoesForm">
-      <button class="btn_geral" id="btn_gravar">Cadastrar</button>
-      <button class="btn_geral" id="btn_cancelar">Cancelar</button>
     </div>
 
     <script src="../js/criarCadastro.js"></script>
