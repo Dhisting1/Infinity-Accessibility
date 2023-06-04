@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/criarCadastro.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body id="bodyCadastro">
+    <!-- <h1>Novo</h1> -->
+
+    <form class="elementosForm">
+      <div class="campoForm">
+        <label for="f_name">Nome:</label>
+        <input type="text" name="f_name" id="f_name" />
+      </div>
+
+      <div class="campoForm">
+        <label for="f_email">Email:</label>
+        <input type="email" name="f_email" id="f_email" />
+      </div>
+
+      <div class="campoForm">
+        <label for="f_senha">Senha: </label>
+        <input type="password" name="f_senha" id="f_senha" />
+      </div>
+
+      <div class="campoForm">
+        <label for="f_repetir_senha">Repetir a senha: </label>
+        <input type="password" name="f_repetir_senha" id="f_repetir_senha" />
+      </div>
+    </form>
+
+    <div class="botoesForm">
+      <button class="btn_geral" id="btn_gravar">Cadastrar</button>
+      <button class="btn_geral" id="btn_cancelar">Cancelar</button>
+    </div>
+
+    <script src="../js/criarCadastro.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+#bodyCadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    background-color: #d0fefe;
+}
+.elementosForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+    margin-top: 20px;
+    /* border: 1px solid red;  */
+}
+.campoForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    width: 90%;
+    /* border:1px solid red */
+}
+.campoForm input{
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%; 
+    border: 1px solid black;
+}
+.botoesForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_geral{
+    background-color: #248;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
