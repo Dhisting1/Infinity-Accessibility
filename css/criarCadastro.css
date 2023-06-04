@@ -11,7 +11,7 @@
 .container{
     margin-top: 8em;
     width: 100%;
-    /* height: 80vh; */
+    /* height: 50vh; */
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
 }
@@ -86,5 +86,16 @@
     box-shadow: 2px 2px 12px #0000001c;
 }
 .input-box input:hover{
-    
+    background-color: #eeeeeee7;
+}
+.input-box input:focus-visible{
+    outline: 1px solid #6c63ff;
+}
+.input-box label{
+    font-size: .80rem;
+    font-weight: 600;
+    color: #000000;
+}
+.input-box input::placeholder{
+    color: #000000be;
 }
