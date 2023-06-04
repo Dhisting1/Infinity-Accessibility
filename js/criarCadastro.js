@@ -6,7 +6,7 @@ const f_email = document.querySelector("#f_email");
 const f_senha = document.querySelector("#f_senha");
 const f_repetir_senha = document.querySelector("#f_repetir_senha");
 
-f_name.focus();
+// f_name.focus();
 
 btn_gravar.addEventListener("click", (evt) => {
   const dados = {
