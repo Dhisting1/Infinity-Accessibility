@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#bodyDaltonic{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #d0fefe;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    /* overflow: hidden; */
+}
+.container{
+    margin-top: 8rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.daltonico{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, .212);
+    border: 1px solid red;
+}
+.title{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.title h1::after{
+    content: '';
+    display: block;
+    width: 35.5rem;
+    height: .3rem;
+    background-color: #2c8a8b;
+    margin: 0;
+    position: absolute;
+    border-radius: 10px;
+}
+.daltonic-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1.1rem;
+    width: 100%;
+    border: 1px solid red;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+.input-box p{
+    font-weight: 600;
+    margin-top: 1.3rem;
+}
+.input-box img{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

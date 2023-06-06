@@ -38,7 +38,7 @@
 .title h1::after{
     content: '';
     display: block;
-    width: 5rem;
+    width: 28rem;
     height: .3rem;
     background-color: #2c8a8b;
     margin: 0;

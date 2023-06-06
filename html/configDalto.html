@@ -4,10 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pesquisar</title>
-    <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;0,800;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/modoDaltonic.css" />
+    <title>Configurações do Modo Daltonismo</title>
   </head>
-  <body>
-    <h1>Pesquisar</h1>
+  <body id="bodyDaltonic">
+    <div class="container">
+      <div class="daltonico">
+        <div class="title">
+          <h1>Configuração do Modo Daltonismo</h1>
+        </div>
+        <div class="daltonic-group">
+          <div class="input-box">
+            <h2>Protanopia</h2>
+            <p>Protanopia ajuste de cor:</p>
+            <input type="range" name="protanopia" id="protanopia" />
+            <p>Gravidade:</p>
+            <input type="range" name="protanopia" id="protanopia" />
+            <img
+              width="150"
+              height="150"
+              src="../img/Gradient_color_wheel.png"
+              alt=""
+            />
+          </div>
+          <div class="input-box">
+            <h2>Deuteranopia</h2>
+            <p>Deuteranopia ajuste de cor:</p>
+            <input type="range" name="deuteranopia" id="deuteranopia" />
+            <p>Gravidade:</p>
+            <input type="range" name="deuteranopia" id="deuteranopia" />
+            <img
+              width="150"
+              height="150"
+              src="../img/Gradient_color_wheel.png"
+              alt=""
+            />
+          </div>
+          <div class="input-box">
+            <h2>Tritanopia</h2>
+            <p>Tritanopia ajuste de cor:</p>
+            <input type="range" name="tritanopia" id="tritanopia" />
+            <p>Gravidade:</p>
+            <input type="range" name="tritanopia" id="tritanopia" />
+            <img
+              width="150"
+              height="150"
+              src="../img/Gradient_color_wheel.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="salvar">Salvar</button>
+          <button class="cancelar">Cancelar</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
