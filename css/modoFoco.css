@@ -80,6 +80,9 @@
 .input-box .input-radio{
     margin: 2rem 0;
 }
+.input-box .input-radio p{
+    margin-bottom: 1.5rem;
+}
 .buttons{
     display: flex;
     justify-content: space-between;
