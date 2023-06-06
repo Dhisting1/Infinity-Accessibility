@@ -24,7 +24,7 @@
     background-color: #017374;
     /* padding: 5px; */
     font-weight: 500;
-    height: 100%;
+    /* height: 100%; */
 }
 .main {
     display: flex;
@@ -32,7 +32,7 @@
     align-items: center;
     background-color: #4634568e;
     width: 100%;
-    height: 180vh;
+    height: 110vh;
 }
 .aba{
     background-color: #1f2b4d;

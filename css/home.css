@@ -16,7 +16,10 @@
   font-size: 35px;
   color: #1f3b4d;
 }
-
+.conteudo h2{
+  margin-top: 20px;
+  text-align: center;
+}
 .conteudo p {
   /* font-size: 20px; */
   margin-left: 20px;
@@ -24,7 +27,23 @@
   text-align: center;
   color: #1f3b4d;
 }
+.container{
+  margin-top: 2em;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+.img{
+  width: 21rem;
+  margin-left: 4rem;
+}
+.img img{
+  align-items: center;
+  width: 100%;
+}
 
-.cards img{
-  height: 350px;
+.img p{
+  color: black;
+  text-align:center;
+  font-size: 1.2rem;
 }
