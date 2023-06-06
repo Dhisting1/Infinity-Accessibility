@@ -28,7 +28,7 @@
     background-color: #fff;
     padding: 3rem;
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, .212);
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .title{
     margin-bottom: 3rem;
@@ -51,7 +51,7 @@
     justify-content: space-between;
     margin-bottom: 1.1rem;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .input-box{
     display: flex;
@@ -69,4 +69,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+.buttons button{
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #6c6cff;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: .3s;
+    font-weight: 600;
+}
+.buttons button:nth-child(2){
+    margin-left: 15px;
+    background-color: #ff000090;
+}
+
+.buttons button:nth-child(1):hover{
+    background-color: #4036fc;
+    transition: ease-in-out;
+}
+.buttons button:nth-child(2):hover{
+    background-color: #ff0000;
+    transition: ease-in-out;
 }
