@@ -1,0 +1,17 @@
+body {
+    background-color: #d0fefe;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 20px;
+    text-align: center;
+    color: #1f3b4d;
+}
+
+h1 {
+    margin: 50px 0 40px 0;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+p {
+    line-height: 2;
+}
