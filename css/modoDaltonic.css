@@ -33,10 +33,10 @@
     display: flex;
     justify-content: space-between;
 }
-.title h1::after{
+.title h2::after{
     content: '';
     display: block;
-    width: 35.5rem;
+    width: 254px;
     height: .3rem;
     background-color: #0f766e;
     margin: 0;
