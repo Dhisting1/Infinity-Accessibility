@@ -18,9 +18,7 @@ body{
 header {
     width: 100vw;
     height: 128px;
-
     background-color: #017374;
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,9 +34,7 @@ nav {
     z-index: 100;
     width: 100vw;
     margin-bottom: 64px;
-
     background-color: #017374;
-
     display: flex;
     justify-content: space-around;
     align-items:flex;
@@ -47,19 +43,15 @@ nav {
 
 nav a {
     width: 100%;
-
     background-color: #1f2b4d;
     color: #fff;
-
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-
     cursor: pointer;
     border-radius: 10px 10px 0 0;
     padding: 12px;
-
     display: flex;
     align-items: center;
     justify-content: center;
