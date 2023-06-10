@@ -11,11 +11,17 @@
     background-color: #d0fefe;
     font-family: 'Open Sans', sans-serif;
     width: 100%;
+    overflow: hidden;
     /* height: 100vh; */
     
 }
 .container{
+<<<<<<< HEAD
     width: 100%;
+=======
+    margin-top: 8em;
+    width: 80%;
+>>>>>>> 500194c8a59e46a3918962b86ad6db346bd8741e
     /* height: 50vh; */
     display: flex;
     box-shadow: 2px 2px 12px #0000001c;
