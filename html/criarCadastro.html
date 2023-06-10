@@ -15,104 +15,124 @@
   <body id="bodyCadastro">
     <!-- <h1>Novo</h1> -->
 
-    <div class="container">
-      <div class="form-img">
-        <img src="../img/form-img.svg" alt="" />
+    <header>
+      <h1>Infinity Accessibility</h1>
+    </header>
+    <nav id="menu" class="menu">
+      <a href="./home.html" id="btn_home" class="aba ">Home</a>
+      <a href="./configFoco.html" id="btn_configFoco" class="aba">Configuração Modo Foco</a>
+      <a href="./configDalto.html" id="btn_configDalto" class="aba">Configuração para ajudar no Daltonismo</a>
+      <a href="./sobre.html" id="btn_sobre" class="aba">Sobre</a>
+      <a href="./criarCadastro.html" id="btn_criarCadastro" class="aba-selecionada">Cadastrar</a>
+    </nav>
+
+    <main>
+      <div class="container">
+        <div class="form-img">
+          <img src="../img/form-img.svg" alt="" />
+        </div>
+        <div class="form">
+          <form action="#">
+            <div class="form-header">
+              <div class="title">
+                <h1>Cadastre-se</h1>
+              </div>
+              <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="input-box">
+                <label for="f_name">Nome Completo:</label>
+                <input
+                  type="text"
+                  id="f_name"
+                  name="f_name"
+                  placeholder="Digite seu completo"
+                  required
+                />
+              </div>
+  
+              <div class="input-box">
+                <label for="f_email">Email:</label>
+                <input
+                  type="text"
+                  id="f_email"
+                  name="email"
+                  placeholder="Digite seu email"
+                  required
+                />
+              </div>
+  
+              <div class="input-box">
+                <label for="f_password">Senha:</label>
+                <input
+                  type="password"
+                  id="f_senha"
+                  name="password"
+                  placeholder="Digite sua senha"
+                  required
+                />
+              </div>
+  
+              <div class="input-box">
+                <label for="f_repetir_senha">Confirme sua senha:</label>
+                <input
+                  type="password"
+                  id="f_repetir_senha"
+                  name="confirm-password"
+                  placeholder="Confirme sua senha"
+                  required
+                />
+              </div>
+            </div>
+            <div class="genero-input">
+              <div class="genero-title">
+                <h3>Gênero</h3>
+              </div>
+  
+              <div class="genero-group">
+                <div class="genero-input">
+                  <input type="radio" name="genero" id="feminino" />
+                  <label for="feminino">Feminino</label>
+                </div>
+  
+                <div class="genero-input">
+                  <input type="radio" name="genero" id="masculino" />
+                  <label for="masculino">Masculino</label>
+                </div>
+  
+                <div class="genero-input">
+                  <input type="radio" name="genero" id="outros" />
+                  <label for="outros">Outros</label>
+                </div>
+  
+                <div class="genero-input">
+                  <input type="radio" name="genero" id="nao-dizer" />
+                  <label for="nao-dizer">Prefiro não dizer</label>
+                </div>
+              </div>
+            </div>
+  
+            <div id="submit-buttons">
+              <div class="continue-button">
+                <button id="btn_gravar">
+                  <a href="#">Continuar</a>
+                </button>
+              </div>
+              <div class="continue-button cancel-button">
+                <button id="btn_cancelar">Cancelar</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="form">
-        <form action="#">
-          <div class="form-header">
-            <div class="title">
-              <h1>Cadastre-se</h1>
-            </div>
-            <div class="login-button">
-              <button><a href="#">Entrar</a></button>
-            </div>
-          </div>
-          <div class="input-group">
-            <div class="input-box">
-              <label for="f_name">Nome Completo:</label>
-              <input
-                type="text"
-                id="f_name"
-                name="f_name"
-                placeholder="Digite seu completo"
-                required
-              />
-            </div>
+    </main>
 
-            <div class="input-box">
-              <label for="f_email">Email:</label>
-              <input
-                type="text"
-                id="f_email"
-                name="email"
-                placeholder="Digite seu email"
-                required
-              />
-            </div>
-
-            <div class="input-box">
-              <label for="f_password">Senha:</label>
-              <input
-                type="password"
-                id="f_senha"
-                name="password"
-                placeholder="Digite sua senha"
-                required
-              />
-            </div>
-
-            <div class="input-box">
-              <label for="f_repetir_senha">Confirme sua senha:</label>
-              <input
-                type="password"
-                id="f_repetir_senha"
-                name="confirm-password"
-                placeholder="Confirme sua senha"
-                required
-              />
-            </div>
-          </div>
-          <div class="genero-input">
-            <div class="genero-title">
-              <h3>Gênero</h3>
-            </div>
-
-            <div class="genero-group">
-              <div class="genero-input">
-                <input type="radio" name="genero" id="feminino" />
-                <label for="feminino">Feminino</label>
-              </div>
-
-              <div class="genero-input">
-                <input type="radio" name="genero" id="masculino" />
-                <label for="masculino">Masculino</label>
-              </div>
-
-              <div class="genero-input">
-                <input type="radio" name="genero" id="outros" />
-                <label for="outros">Outros</label>
-              </div>
-
-              <div class="genero-input">
-                <input type="radio" name="genero" id="nao-dizer" />
-                <label for="nao-dizer">Prefiro não dizer</label>
-              </div>
-            </div>
-          </div>
-
-          <div class="continue-button">
-            <button id="btn_gravar">
-              <a href="#">Continuar</a>
-            </button>
-          </div>
-          <div class="continue-button cancel-button">
-            <button id="btn_cancelar">Cancelar</button>
-          </div>
-        </form>
-      </div>
-    </div>
+    <footer>
+      <p>I n f i n i t y   A c c e s s i b i l i t y &copy;</p>
+      <p>Lucas Fernando, Eduardo Vieira, Thiago</p>
+    </footer>
 
     <script src="../js/criarCadastro.js"></script>
   </body>

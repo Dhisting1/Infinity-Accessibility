@@ -8,61 +8,81 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;0,800;1,600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/modoDaltonic.css" />
     <title>Configurações do Modo Daltonismo</title>
   </head>
   <body id="bodyDaltonic">
-    <div class="container">
-      <div class="daltonico">
-        <div class="title">
-          <h1>Configuração do Modo Daltonismo</h1>
-        </div>
-        <div class="daltonic-group">
-          <div class="input-box">
-            <h2>Protanopia</h2>
-            <p>Protanopia ajuste de cor:</p>
-            <input type="range" name="protanopia" id="protanopia" />
-            <p>Gravidade:</p>
-            <input type="range" name="protanopia" id="protanopia" />
-            <img
-              width="150"
-              height="150"
-              src="../img/Gradient_color_wheel.png"
-              alt=""
-            />
+
+    <header>
+      <h1>Infinity Accessibility</h1>
+    </header>
+    <nav id="menu" class="menu">
+      <a href="./home.html" id="btn_home" class="aba ">Home</a>
+      <a href="./configFoco.html" id="btn_configFoco" class="aba">Configuração Modo Foco</a>
+      <a href="./configDalto.html" id="btn_configDalto" class="aba-selecionada">Configuração para ajudar no Daltonismo</a>
+      <a href="./sobre.html" id="btn_sobre" class="aba">Sobre</a>
+      <a href="./criarCadastro.html" id="btn_criarCadastro" class="aba">Cadastrar</a>
+    </nav>
+
+    <main>
+      <div class="container">
+        <div class="daltonico">
+          <div class="title">
+            <h1>Configuração do Modo Daltonismo</h1>
           </div>
-          <div class="input-box">
-            <h2>Deuteranopia</h2>
-            <p>Deuteranopia ajuste de cor:</p>
-            <input type="range" name="deuteranopia" id="deuteranopia" />
-            <p>Gravidade:</p>
-            <input type="range" name="deuteranopia" id="deuteranopia" />
-            <img
-              width="150"
-              height="150"
-              src="../img/Gradient_color_wheel.png"
-              alt=""
-            />
+          <div class="daltonic-group">
+            <div class="input-box">
+              <h2>Protanopia</h2>
+              <p>Ajuste de cor:</p>
+              <input type="range" name="protanopia" id="protanopia" />
+              <p>Gravidade:</p>
+              <input type="range" name="protanopia" id="protanopia" />
+              <img
+                width="150"
+                height="150"
+                src="../img/Gradient_color_wheel.png"
+                alt=""
+              />
+            </div>
+            <div class="input-box">
+              <h2>Deuteranopia</h2>
+              <p>Ajuste de cor:</p>
+              <input type="range" size="50px" name="deuteranopia" id="deuteranopia" />
+              <p>Gravidade:</p>
+              <input type="range" name="deuteranopia" id="deuteranopia" />
+              <img
+                width="150"
+                height="150"
+                src="../img/Gradient_color_wheel.png"
+                alt=""
+              />
+            </div>
+            <div class="input-box">
+              <h2>Tritanopia</h2>
+              <p>Ajuste de cor:</p>
+              <input type="range" name="tritanopia" id="tritanopia" />
+              <p>Gravidade:</p>
+              <input type="range" name="tritanopia" id="tritanopia" />
+              <img
+                width="150"
+                height="150"
+                src="../img/Gradient_color_wheel.png"
+                alt=""
+              />
+            </div>
           </div>
-          <div class="input-box">
-            <h2>Tritanopia</h2>
-            <p>Tritanopia ajuste de cor:</p>
-            <input type="range" name="tritanopia" id="tritanopia" />
-            <p>Gravidade:</p>
-            <input type="range" name="tritanopia" id="tritanopia" />
-            <img
-              width="150"
-              height="150"
-              src="../img/Gradient_color_wheel.png"
-              alt=""
-            />
+          <div class="buttons">
+            <button class="salvar">Salvar</button>
+            <button class="cancelar">Cancelar</button>
           </div>
-        </div>
-        <div class="buttons">
-          <button class="salvar">Salvar</button>
-          <button class="cancelar">Cancelar</button>
         </div>
       </div>
-    </div>
+    </main>
+
+    <footer>
+      <p>I n f i n i t y   A c c e s s i b i l i t y &copy;</p>
+      <p>Lucas Fernando, Eduardo Vieira, Thiago</p>
+    </footer>
   </body>
 </html>
