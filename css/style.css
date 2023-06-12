@@ -12,12 +12,12 @@ body{
 
 #content {
     min-height: 100vh;
-    padding-bottom: 106px;
+    padding-bottom: 6.625rem;
 }
 
 header {
     width: 100vw;
-    height: 128px;
+    height: 8rem;
     background-color: #017374;
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@ header {
 }
 header h1 {
     color: #fff;
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 nav {
@@ -33,7 +33,7 @@ nav {
     top: 0;
     z-index: 100;
     width: 100vw;
-    margin-bottom: 64px;
+    margin-bottom: 4rem;
     background-color: #017374;
     display: flex;
     justify-content: space-around;
@@ -50,33 +50,33 @@ nav a {
     text-decoration: none;
     text-align: center;
     cursor: pointer;
-    border-radius: 10px 10px 0 0;
-    padding: 12px;
+    border-radius: 0.625rem 0.625rem 0 0;
+    padding: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 main {
-    margin: 0 64px;
+    margin: 0 4rem;
     color: #27272a;
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 1.75rem;
     text-align: center;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 p {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .aba:hover{
@@ -91,8 +91,8 @@ p {
 footer{
     width: 100vw;
     background-color: #1f2b4d;
-    padding: 20px;
-    margin-top: 32px;
+    padding: 1.25rem;
+    margin-top: 2rem;
 
     position: relative;
     bottom: 0;
@@ -109,6 +109,6 @@ footer p:nth-child(1){
 }
 
 footer p:nth-child(2){
-    margin-top: 15px;
+    margin-top: 1rem;
     font-size: .8rem;
 }
