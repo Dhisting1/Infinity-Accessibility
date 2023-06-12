@@ -12,20 +12,29 @@ body{
 
 #content {
     min-height: 100vh;
-    padding-bottom: 6.625rem;
 }
 
 header {
     width: 100vw;
-    height: 8rem;
     background-color: #017374;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
+
+.menu-section {
+    height: 11.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 header h1 {
     color: #fff;
     font-size: 2rem;
+    margin-top: 2.5rem;
 }
 
 nav {
@@ -33,7 +42,6 @@ nav {
     top: 0;
     z-index: 100;
     width: 100vw;
-    margin-bottom: 4rem;
     background-color: #017374;
     display: flex;
     justify-content: space-around;
@@ -43,6 +51,7 @@ nav {
 
 nav a {
     width: 100%;
+    padding: .75rem;
     background-color: #1f2b4d;
     color: #fff;
     font-weight: 600;
@@ -51,14 +60,13 @@ nav a {
     text-align: center;
     cursor: pointer;
     border-radius: 0.625rem 0.625rem 0 0;
-    padding: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 main {
-    margin: 0 4rem;
+    margin: 4rem;
     color: #27272a;
 }
 
@@ -92,7 +100,6 @@ footer{
     width: 100vw;
     background-color: #1f2b4d;
     padding: 1.25rem;
-    margin-top: 2rem;
 
     position: relative;
     bottom: 0;
@@ -111,4 +118,125 @@ footer p:nth-child(1){
 footer p:nth-child(2){
     margin-top: 1rem;
     font-size: .8rem;
+}
+
+/* ##################### RESPONSIVIDADE ##################### */
+
+@media (max-width: 1180px) {
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    nav a {
+        font-weight: 400;
+        font-size: 0.75rem;
+    }
+
+    /* .menu-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 8rem;
+        justify-content: space-between;
+    } */
+  }
+
+@media (max-width: 725px) {
+    nav {
+        display: none;
+    }
+
+    nav a {
+        background-color: #017374;
+        border-radius: none;
+        font-size: 1rem;
+    }
+
+    .aba-selecionada {
+        border-radius: none;
+        background-color: #017374;
+        color: #d0fefe;
+    }
+
+    .one, .two, .three {
+        background-color: #fff;
+        width: 100%;
+        height: 5px;
+
+        transition-duration: 0.3s;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .menu-section h1 {
+        margin-top: 0;
+    }
+
+    .menu-section {
+        width: 100vw;
+        height: 4rem;
+    }
+
+    .menu-section #menu-header {
+        width: 100vw;
+        height: 4rem;
+        position: absolute;
+        top: 0;
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+
+        background-color: #017374;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 1px solid #27272a; */
+    }
+
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background-color: #017374;
+
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+
+        justify-content: center;
+    }
+
+    .menu-section.on nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .menu-section.on .menu-toggle .one{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toggle .two{
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three{
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    main {
+        margin: 2rem; 
+    }
 }

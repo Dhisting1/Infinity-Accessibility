@@ -14,21 +14,30 @@
   </head>
   <body id="bodyDaltonic">
     <header>
-      <h1>Infinity Accessibility</h1>
+      <div class="menu-section">
+        <div id="menu-header">
+          <h1>Infinity Accessibility</h1>
+          <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+        </div>
+        <nav>
+          <a href="../index.html" id="btn_home" class="aba">Home</a>
+          <a href="./configFoco.html" id="btn_configFoco" class="aba"
+          >Configuração Modo Foco</a
+          >
+          <a href="./configDalto.html" id="btn_configDalto" class="aba-selecionada"
+          >Configuração Modo Daltonismo</a
+          >
+          <a href="./sobre.html" id="btn_sobre" class="aba">Sobre</a>
+          <a href="./criarCadastro.html" id="btn_criarCadastro" class="aba"
+          >Cadastrar</a
+          >
+        </nav>
+      </div>
     </header>
-    <nav id="menu" class="menu">
-      <a href="../index.html" id="btn_home" class="aba">Home</a>
-      <a href="./configFoco.html" id="btn_configFoco" class="aba"
-        >Configuração Modo Foco</a
-      >
-      <a href="./configDalto.html" id="btn_configDalto" class="aba-selecionada"
-        >Configuração para ajudar no Daltonismo</a
-      >
-      <a href="./sobre.html" id="btn_sobre" class="aba">Sobre</a>
-      <a href="./criarCadastro.html" id="btn_criarCadastro" class="aba"
-        >Cadastrar</a
-      >
-    </nav>
 
     <main>
       <div class="container">
@@ -38,7 +47,7 @@
           </div>
           <div class="daltonic-group">
             <div class="input-box">
-              <h2>Protanopia</h2>
+              <h3>Protanopia</h3>
               <p>Ajuste de cor:</p>
               <input type="range" name="protanopia" id="protanopia" />
               <p>Gravidade:</p>
@@ -51,7 +60,7 @@
               />
             </div>
             <div class="input-box">
-              <h2>Deuteranopia</h2>
+              <h3>Deuteranopia</h3>
               <p>Ajuste de cor:</p>
               <input
                 type="range"
@@ -69,7 +78,7 @@
               />
             </div>
             <div class="input-box">
-              <h2>Tritanopia</h2>
+              <h3>Tritanopia</h3>
               <p>Ajuste de cor:</p>
               <input type="range" name="tritanopia" id="tritanopia" />
               <p>Gravidade:</p>
@@ -94,5 +103,7 @@
       <p>I n f i n i t y   A c c e s s i b i l i t y &copy;</p>
       <p>Lucas Fernando, Eduardo Vieira, Thiago</p>
     </footer>
+    <script src="../js/menu.js"></script>
+
   </body>
 </html>

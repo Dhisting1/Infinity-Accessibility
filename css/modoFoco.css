@@ -117,3 +117,19 @@ p {
 select {
     margin-top: .5rem;
 }
+
+/* ##################### RESPONSIVIDADE ##################### */
+
+@media (max-width: 1180px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    .title h2::after {
+        width: 335px;
+    }
+
+    .input-box h3 {
+        font-size: 1.25rem;
+    }
+  }
