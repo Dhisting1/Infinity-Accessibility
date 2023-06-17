@@ -25,15 +25,18 @@
         </div>
         <nav>
           <a href="../index.html" id="btn_home" class="aba">Home</a>
-          <a href="./configFoco.html" id="btn_configFoco" class="aba-selecionada"
-          >Configuração Modo Foco</a
+          <a
+            href="./configFoco.html"
+            id="btn_configFoco"
+            class="aba-selecionada"
+            >Configuração Modo Foco</a
           >
           <a href="./configDalto.html" id="btn_configDalto" class="aba"
-          >Configuração Modo Daltonismo</a
+            >Configuração Modo Daltonismo</a
           >
           <a href="./sobre.html" id="btn_sobre" class="aba">Sobre</a>
           <a href="./criarCadastro.html" id="btn_criarCadastro" class="aba"
-          >Cadastrar</a
+            >Cadastrar</a
           >
         </nav>
       </div>
@@ -45,117 +48,97 @@
           <div class="title">
             <h2>Configuração do Pomodoro</h2>
           </div>
-          <div class="pomodoro-group">
+          <form id="form_pomodoro" class="pomodoro-group">
             <div class="input-box">
               <h3>Tempo de concentração</h3>
-              <label for="duracao">Duração min:</label>
+              <label for="duracao-intervalo-normal">Duração min:</label>
               <input
                 type="number"
-                name="duracao"
-                id="duracao"
+                name="duracao-intervalo-normal"
+                id="duracao-intervalo-normal"
                 step="5"
                 min="5"
                 max="200"
+                required
               />
-
-              <div class="input-radio">
-                <p>Quando terminado:</p>
-                <div class="radios">
-                  <div>
-                    <input type="radio" name="mostrar2" id="mostrar3" />
-                    <label for="mostrar3"
-                      >Mostrar notificação no navegador</label
-                    >
-                  </div>
-                  <div>
-                    <input type="radio" name="mostrar2" id="mostrar4" />
-                    <label for="mostrar4"
-                      >Mostrar notificação na área de trabalho</label
-                    >
-                  </div>
-                </div>
-              </div>
             </div>
 
             <div class="input-box">
               <h3>Tempo de intervalo curto</h3>
-              <label for="duracao-intervalo">Duração min:</label>
+              <label for="duracao-intervalo-curto">Duração min:</label>
               <input
                 type="number"
-                name="duracao-intervalo"
-                id="duracao-intervalo"
+                name="duracao-intervalo-curto"
+                id="duracao-intervalo-curto"
                 step="1"
                 min="0"
                 max="10"
+                required
               />
-              <div class="input-radio">
-                <p>Quando terminado:</p>
-                <div class="radios">
-                  <div>
-                    <input type="radio" name="mostrar2" id="mostrar3" />
-                    <label for="mostrar3"
-                      >Mostrar notificação no navegador</label
-                    >
-                  </div>
-                  <div>
-                    <input type="radio" name="mostrar2" id="mostrar4" />
-                    <label for="mostrar4"
-                      >Mostrar notificação na área de trabalho</label
-                    >
-                  </div>
-                </div>
-              </div>
             </div>
             <div class="input-box">
               <h3>Tempo de intervalo longo</h3>
-              <label for="intervalo-longo-duracao">Duração min:</label>
+              <label for="duracao-intervalo-longo">Duração min:</label>
               <input
                 type="number"
-                name="intervalo-longo-duracao"
-                id="intervalo-longo-duracao"
+                name="duracao-intervalo-longo"
+                id="duracao-intervalo-longo"
                 step="1"
                 min="5"
                 max="20"
+                required
               />
               <div class="input-radio">
                 <p>Quando terminado:</p>
 
                 <div class="radios">
                   <div>
-                    <input type="radio" name="mostrar2" id="mostrar3" />
-                    <label for="mostrar3"
+                    <input
+                      type="checkbox"
+                      name="notificacaoDoNaveg"
+                      id="notificacaoDoNaveg"
+                    />
+                    <label for="notificacaoDoNaveg"
                       >Mostrar notificação no navegador</label
                     >
                   </div>
                   <div>
-                    <input type="radio" name="mostrar2" id="mostrar4" />
-                    <label for="mostrar4"
+                    <input
+                      type="checkbox"
+                      name="notificacaoDoDesktop"
+                      id="notificacaoDoDesktop"
+                    />
+                    <label for="notificacaoDoDesktop"
                       >Mostrar notificação na área de trabalho</label
                     >
                   </div>
                 </div>
               </div>
-              <label for="intervalo-longo"
+              <label for="opcao-intervalo-longo"
                 >Tirar um intervalo longo a cada:
               </label>
-              <select name="intervalo-longo" id="intervalo-longo">
-                <option value="0">Selecione uma opção</option>
-                <option value="1">A cada duas pausas (alternando)</option>
-                <option value="2">A cada três pausas</option>
-                <option value="3">A cada quatro pausas</option>
-                <option value="4">A cada cinco pausas</option>
-                <option value="5">A cada seis pausas</option>
-                <option value="6">A cada sete pausas</option>
-                <option value="7">A cada oito pausas</option>
-                <option value="8">A cada nove pausas</option>
-                <option value="9">A cada dez pausas</option>
+              <select
+                required
+                name="opcao-intervalo-longo"
+                id="opcao-intervalo-longo"
+              >
+                <option value="">Selecione uma opção</option>
+                <option value="0">A cada duas pausas (alternando)</option>
+                <option value="1">A cada três pausas</option>
+                <option value="2">A cada quatro pausas</option>
+                <option value="3">A cada cinco pausas</option>
+                <option value="4">A cada seis pausas</option>
+                <option value="5">A cada sete pausas</option>
+                <option value="6">A cada oito pausas</option>
+                <option value="7">A cada nove pausas</option>
+                <option value="8">A cada dez pausas</option>
               </select>
             </div>
-          </div>
-          <div class="buttons">
-            <button id="salvar">Salvar</button>
-            <button id="cancelar">Cancelar</button>
-          </div>
+            <div class="buttons">
+              <input type="submit" id="salvar" value="Salvar" />
+              <input type="reset" id="cancelar" value="Cancelar" />
+            </div>
+          </form>
         </div>
       </div>
     </main>
@@ -165,6 +148,7 @@
       <p>Lucas Fernando, Eduardo Vieira, Thiago</p>
     </footer>
     <script src="../js/menu.js"></script>
-
+    <script src="../js/modo_foco.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
