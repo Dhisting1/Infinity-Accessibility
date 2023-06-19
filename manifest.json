@@ -1,0 +1,10 @@
+{
+    "name": "Infinity Accessibility",
+    "description": "extensão prototipo",
+    "version": "0.0.2",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+        "default_popup":"Extensao/extensao.html"
+    }
+}
