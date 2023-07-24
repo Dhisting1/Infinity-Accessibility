@@ -142,7 +142,6 @@
 .continue-button button:hover{
     background-color: #4f46e5;
     transition: ease-in;
-    
 }
 .continue-button button a{
     font-size: 0.875rem;

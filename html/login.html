@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;0,800;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body id="bodyCadastro">
+    <!-- <h1>Novo</h1> -->
+
+    <header>
+      <div class="menu-section">
+        <div id="menu-header">
+          <h1>Infinity Accessibility</h1>
+          <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+        </div>
+        <nav>
+          <a href="../index.html" id="btn_home" class="aba">Home</a>
+          <a href="configFoco.html" id="btn_configFoco" class="aba"
+            >Configuração Modo Foco</a
+          >
+          <a href="configDalto.html" id="btn_configDalto" class="aba"
+            >Configuração Modo Daltonismo</a
+          >
+          <a href="sobre.html" id="btn_sobre" class="aba">Sobre</a>
+          <div>
+            <a href="../html/login.html" id="btn_criarCadastro" class="aba-selecionada"
+            >
+            <svg fill="#fff" width="64px" height="64px" viewBox="0 0 64 64" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+              <g id="SVGRepo_iconCarrier">
+              <title/>
+              <path d="M32,32.86a9.22,9.22,0,1,1,9.21-9.22A9.23,9.23,0,0,1,32,32.86Zm0-15.43a6.22,6.22,0,1,0,6.21,6.21A6.21,6.21,0,0,0,32,17.43Z"/>
+              <path d="M32,56.64a24.68,24.68,0,0,1-15.22-5.27,1.52,1.52,0,0,1-.57-1.06c0-.16,0-.31,0-.47a15.8,15.8,0,1,1,31.6,0c0,.16,0,.31,0,.47a1.52,1.52,0,0,1-.57,1.06A24.68,24.68,0,0,1,32,56.64ZM19.21,49.45a21.62,21.62,0,0,0,25.58,0,12.8,12.8,0,0,0-25.58,0Zm27.08.74h0Z"/>
+              <path d="M32,56.64a24.65,24.65,0,1,1,15.22-5.27A24.68,24.68,0,0,1,32,56.64Zm0-46.28A21.63,21.63,0,0,0,18.64,49a21.64,21.64,0,0,0,35-17A21.67,21.67,0,0,0,32,10.36Z"/>
+              </g>
+          </svg>
+          </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+                <form action="#">
+                    <h2>Entrar</h2>
+                    <div id="input-group">
+
+                        <div class="input-box">
+                            <label for="f_email">Email:</label>
+                            <input
+                            type="text"
+                            id="f_email"
+                            name="email"
+                            placeholder="Digite seu email"
+                            required
+                            />
+                        </div>
+            
+                        <div class="input-box">
+                            <label for="f_password">Senha:</label>
+                            <input
+                            type="password"
+                            id="f_senha"
+                            name="password"
+                            placeholder="Digite sua senha"
+                            required
+                            />
+                        </div>
+
+                        <div class="input-box-checkbox">
+                            <input
+                            type="checkbox"
+                            id="f_manter-login"
+                            name="manter-login"
+                            />
+                            <label for="f_manter-login">Manter login</label>
+                        </div>
+
+                    </div>
+                    <div class="login-button">
+                        <button id="btn_gravar">
+                        <a href="#">Login</a>
+                        </button>
+                    </div>
+                    <div id="with-google">
+                        <button id="with-google-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+                            <defs><path id="a" d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"/></defs><clipPath id="b"><use xlink:href="#a" overflow="visible"/></clipPath><path clip-path="url(#b)" fill="#FBBC05" d="M0 37V11l17 13z"/><path clip-path="url(#b)" fill="#EA4335" d="M0 11l17 13 7-6.1L48 14V0H0z"/><path clip-path="url(#b)" fill="#34A853" d="M0 37l30-23 7.9 1L48 0v48H0z"/><path clip-path="url(#b)" fill="#4285F4" d="M48 48L17 24l-4-3 35-10z"/>
+                            </svg>
+                            <span>Continuar com o Google</span>
+                        </button>
+                    </div>
+                    <a id="cadastro" href="../html/criarCadastro.html">Não tem uma conta? Cadastre-se</a>
+                </form>
+      
+    </main>
+
+    <footer>
+      <p>I n f i n i t y   A c c e s s i b i l i t y &copy;</p>
+      <p>Lucas Fernando, Eduardo Vieira, Thiago</p>
+
+    <script src="../js/menu.js"></script>
+  </body>
+</html>

@@ -87,9 +87,10 @@ p {
 .buttons{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     /* border: 1px solid red; */
 }
-.buttons button{
+.buttons input{
     width: 8rem;
     border: none;
     background-color: #6c6cff;
@@ -100,16 +101,16 @@ p {
     transition: .3s;
     font-weight: 600;
 }
-.buttons button:nth-child(2){
+.buttons input:nth-child(2){
     margin-left: 1rem;
     background-color: #ff000090;
 }
 
-.buttons button:nth-child(1):hover{
+.buttons input:nth-child(1):hover{
     background-color: #4f46e5;
     transition: ease-in-out;
 }
-.buttons button:nth-child(2):hover{
+.buttons input:nth-child(2):hover{
     background-color: #dc2626;
     transition: ease-in-out;
 }
